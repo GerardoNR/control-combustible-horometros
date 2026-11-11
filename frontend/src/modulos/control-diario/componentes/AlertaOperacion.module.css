@@ -1,0 +1,24 @@
+.boton {
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-disabled-bg: transparent;
+  min-height: 32px;
+  padding: 3px 4px;
+  border: 0;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.boton:focus-visible {
+  outline: 3px solid #183b67;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.etiqueta {
+  min-width: 6.5rem;
+  padding: 0.45em 0.7em;
+  font-size: 0.875rem;
+  font-weight: 600;
+}

@@ -1,0 +1,35 @@
+.indicador {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.5rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.boton {
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-disabled-bg: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.boton:focus-visible {
+  outline: 3px solid #183b67;
+  outline-offset: 2px;
+  box-shadow: none;
+}

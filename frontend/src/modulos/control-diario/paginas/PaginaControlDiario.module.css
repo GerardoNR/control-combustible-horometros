@@ -1,0 +1,53 @@
+.controlDiario table {
+  width: 100%;
+}
+
+.controlDiario table th,
+.controlDiario table td {
+  vertical-align: middle;
+}
+
+.controlDiario section table th:nth-child(n + 6):nth-child(-n + 8),
+.controlDiario section table td:nth-child(n + 6):nth-child(-n + 8) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.controlDiario section table th:last-child,
+.controlDiario section table td:last-child {
+  white-space: normal;
+  min-width: 160px;
+}
+
+.controlDiario section table th:nth-child(3),
+.controlDiario section table td:nth-child(3) {
+  min-width: 150px;
+}
+
+.controlDiario section table th:nth-child(5),
+.controlDiario section table td:nth-child(5) {
+  min-width: 190px;
+  text-align: left;
+}
+
+.resumen {
+  margin-top: 0;
+}
+.resumen article {
+  padding: 16px;
+}
+.selectorFecha {
+  position: relative;
+}
+.selectorFecha time {
+  position: absolute;
+  inset: 1px 38px 1px 10px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  background: #fff;
+  color: #334155;
+}
+.selectorFecha:focus-within time {
+  display: none;
+}
