@@ -1,0 +1,50 @@
+.herramientas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 22px 0 16px;
+}
+.herramientas > span {
+  font-size: 13px;
+  color: #526176;
+}
+.tabla {
+  overflow: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.tabla table {
+  white-space: nowrap;
+  margin: 0;
+  font-size: 13px;
+}
+.tabla th {
+  background: #f5f7fa;
+  color: #526176;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 14px;
+}
+.tabla td {
+  padding: 14px;
+  vertical-align: middle;
+}
+.tabla small {
+  display: block;
+  color: #526176;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.tabla strong {
+  font-weight: 600;
+}
+.tabla :global(.badge) {
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  .herramientas {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

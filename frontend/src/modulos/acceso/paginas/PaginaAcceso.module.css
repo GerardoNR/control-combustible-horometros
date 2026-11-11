@@ -1,0 +1,176 @@
+.acceso {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+  background:
+    radial-gradient(ellipse at 15% 10%, #2563eb26, transparent 50%),
+    linear-gradient(145deg, #192f4c, #101f33);
+}
+.acceso::before,
+.acceso::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: -25%;
+  width: 150%;
+  height: clamp(110px, 20vw, 240px);
+  transform: rotate(-28deg);
+  pointer-events: none;
+  border: 1px solid #8db5e017;
+  background: linear-gradient(180deg, #36598538, #233f651a);
+  box-shadow:
+    0 18px 36px #07142633,
+    inset 0 1px #b8d4f01a;
+}
+.acceso::before {
+  top: 8%;
+}
+.acceso::after {
+  top: 72%;
+  height: clamp(140px, 26vw, 300px);
+  background: linear-gradient(180deg, #2f507742, #1b34561a);
+}
+.caja {
+  --fondo-campo: #354d69;
+  --texto-campo: #f1f5fb;
+  --borde-campo: #7892b0;
+  --radio-control: 8px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  background: linear-gradient(145deg, #243c59, #1c304a);
+  color: #f1f5fb;
+  border: 1px solid #89b1d861;
+  border-radius: 16px;
+  box-shadow:
+    0 20px 56px #07142666,
+    inset 0 1px #d6e7fa0d;
+}
+.marca {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.introduccion {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  color: #c5d3e5;
+  margin-bottom: 28px;
+}
+.caja fieldset > div {
+  margin-bottom: 20px;
+}
+.caja input {
+  height: 46px;
+  min-height: 46px;
+  background-color: var(--fondo-campo);
+  border-color: var(--borde-campo);
+  color: var(--texto-campo);
+  caret-color: var(--texto-campo);
+  border-radius: var(--radio-control);
+}
+.caja input::placeholder {
+  color: #c5d3e5;
+}
+.caja input:focus,
+.campoContrasena:focus-within > input:global(.form-control) {
+  background-color: var(--fondo-campo);
+  color: var(--texto-campo);
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px #93c5fd40;
+}
+.caja input:autofill {
+  background-color: var(--fondo-campo);
+  color: var(--texto-campo);
+  box-shadow: inset 0 0 0 1000px var(--fondo-campo);
+}
+.caja input:-webkit-autofill {
+  -webkit-text-fill-color: var(--texto-campo);
+  -webkit-box-shadow: inset 0 0 0 1000px var(--fondo-campo);
+  caret-color: var(--texto-campo);
+}
+.caja input:autofill:focus,
+.campoContrasena:focus-within > input:autofill {
+  box-shadow:
+    inset 0 0 0 1000px var(--fondo-campo),
+    0 0 0 3px #93c5fd40;
+}
+.caja input:-webkit-autofill:focus,
+.campoContrasena:focus-within > input:-webkit-autofill {
+  -webkit-box-shadow:
+    inset 0 0 0 1000px var(--fondo-campo),
+    0 0 0 3px #93c5fd40;
+}
+.campoContrasena > input:global(.form-control) {
+  width: 100%;
+  padding-right: 52px;
+  /* Conserva el contorno completo frente a las reglas de InputGroup. */
+  border-radius: var(--radio-control) !important;
+}
+.campoContrasena > input:global(.is-invalid) {
+  padding-right: 76px;
+  background-position: right 52px center;
+  border-color: #ffb8bc;
+}
+.caja :global(.form-label) {
+  color: #e4edf9;
+}
+.caja :global(.invalid-feedback) {
+  color: #ffb8bc;
+}
+.campoContrasena > .botonVisibilidad {
+  position: absolute;
+  inset: 1px 1px 1px auto;
+  z-index: 6;
+  width: 46px;
+  margin: 0 !important;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--radio-control) - 1px);
+  background: transparent;
+  color: var(--texto-campo);
+  box-shadow: none;
+  --bs-btn-hover-color: var(--texto-campo);
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-active-color: var(--texto-campo);
+  --bs-btn-active-bg: transparent;
+  --bs-btn-disabled-color: var(--texto-campo);
+  --bs-btn-disabled-bg: transparent;
+}
+.caja :global(.btn:focus-visible) {
+  outline-color: #bfdbfe;
+  box-shadow: 0 0 0 3px #93c5fd40;
+}
+.caja :global(.btn) {
+  min-height: 44px;
+}
+.caja :global(.btn-primary) {
+  height: 46px;
+  border-radius: var(--radio-control);
+}
+.campoContrasena > .botonVisibilidad:focus-visible {
+  outline: 2px solid #bfdbfe;
+  outline-offset: -4px;
+  box-shadow: none;
+}
+@media (max-width: 575px) {
+  .acceso {
+    padding: 24px 16px;
+  }
+  .caja {
+    padding: 28px 22px;
+  }
+  .acceso::before,
+  .acceso::after {
+    left: -65%;
+    width: 230%;
+    transform: rotate(-38deg);
+  }
+}
