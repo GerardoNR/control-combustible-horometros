@@ -1,0 +1,59 @@
+.control {
+  position: relative;
+  min-width: 0;
+}
+.entrada {
+  position: relative;
+}
+.entrada input {
+  padding-right: 42px;
+}
+.flecha {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 38px;
+  border: 0;
+  border-left: 1px solid #d4deec;
+  border-radius: 0 5px 5px 0;
+  color: #526176;
+  background: #f8faff;
+}
+.flecha:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -3px;
+}
+.opciones {
+  position: absolute;
+  z-index: 20;
+  top: 100%;
+  left: 0;
+  right: 0;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+  border: 1px solid #c7d3e1;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 5px 16px #14263d20;
+}
+.opciones li {
+  padding: 10px 12px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  min-height: 44px;
+}
+.opciones li:hover,
+.activo {
+  background: #e7efff;
+  color: #1d4ed8;
+}
+
+@media (max-width: 575px) {
+  .opciones {
+    max-height: min(240px, 35dvh);
+  }
+}

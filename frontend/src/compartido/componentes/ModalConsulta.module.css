@@ -1,0 +1,109 @@
+.dialogo:global(.modal-dialog) {
+  width: calc(100% - 24px);
+  max-width: 1140px;
+  height: 90vh;
+  height: 90dvh;
+  max-height: 90dvh;
+  min-height: 0;
+  margin: 5vh auto;
+  margin: 5dvh auto;
+}
+.dialogo :global(.modal-content) {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.encabezado {
+  flex-shrink: 0;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #fff;
+  border-bottom: 1px solid #d4deec;
+}
+.identidad {
+  min-width: 0;
+  flex: 1;
+}
+.identidad :global(.modal-title) {
+  font-size: 16px;
+  color: #526176;
+  margin-bottom: 8px;
+}
+.resumen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  color: #14263d;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.resumen > strong {
+  font-size: 21px;
+  color: #1d4ed8;
+}
+.cerrar {
+  margin-left: auto;
+  flex-shrink: 0;
+  min-height: 40px;
+}
+.cuerpo {
+  min-height: 0;
+  padding: 18px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.cuerpo.conPestanas {
+  overflow: hidden;
+  padding: 0;
+}
+.dialogo :focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+@media (max-width: 575px) {
+  .encabezado {
+    padding: 12px;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .identidad :global(.modal-title) {
+    font-size: 14px;
+  }
+  .resumen {
+    font-size: 15px;
+    gap: 6px 10px;
+  }
+  .resumen > strong {
+    font-size: 19px;
+  }
+  .cerrar {
+    margin-left: auto;
+    padding-inline: 10px;
+    font-size: 14px;
+  }
+  .cuerpo:not(.conPestanas) {
+    padding: 12px;
+  }
+}
+
+.cuerpo:focus-visible {
+  outline-offset: -3px;
+}
+.cuerpo article dt {
+  font-size: 14px;
+}
+.cuerpo article dd {
+  font-size: 15px;
+}
+.cuerpo article p {
+  font-size: 14px;
+}
+
+.dialogo:has([data-historial-maquinaria]:global(.active)) {
+  height: min(var(--altura-historial, 90dvh), 90dvh);
+}

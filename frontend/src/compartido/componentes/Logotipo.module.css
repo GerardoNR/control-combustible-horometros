@@ -1,0 +1,32 @@
+.logotipo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #14263d;
+  white-space: normal;
+}
+.logotipo img {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.nombre {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0;
+  max-width: 155px;
+  line-height: 1.2;
+}
+.nombre small {
+  display: block;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+  margin-top: 7px;
+  color: #64748b;
+}
+.claro {
+  color: #fff;
+}
+.claro small {
+  color: #b9c9df;
+}

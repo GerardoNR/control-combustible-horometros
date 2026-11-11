@@ -1,0 +1,733 @@
+.cabeceraPagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 23px;
+}
+.sobretitulo {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #526176;
+  text-transform: uppercase;
+}
+.sobretitulo span {
+  padding: 0 8px;
+  color: #94a3b8;
+}
+.cabeceraPagina h1 {
+  font-size: 32px;
+  color: #14263d;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 0 0 8px;
+}
+.cabeceraPagina p {
+  font-size: 14px;
+  color: #526176;
+  margin: 0;
+  line-height: 1.7;
+}
+.sello {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #1d4ed8;
+  border: 1px solid #dbeafe;
+  padding: 8px 11px;
+  background: #eff6ff;
+  white-space: nowrap;
+  border-radius: 6px;
+  font-size: 11px;
+}
+.sello i {
+  font-size: 6px;
+  color: #2563eb;
+}
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 23px;
+}
+.indicador {
+  background: #fff;
+  border: 1px solid #c7d3e1;
+  border-radius: 11px;
+  padding: 18px;
+  box-shadow: 0 4px 14px #14263d0b;
+  min-width: 0;
+}
+.indicadorCabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  color: #526176;
+  font-weight: 500;
+}
+.iconoIndicador {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+.azul {
+  color: #2563eb;
+  background: #eff6ff;
+}
+.ambar {
+  color: #92400e;
+  background: #fffbeb;
+}
+.gris {
+  color: #526176;
+  background: #f1f5f9;
+}
+.valor {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  line-height: 1.6;
+  color: #14263d;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+.valor small {
+  font-size: 15px;
+  color: #526176;
+  font-weight: 400;
+}
+.detalle {
+  font-size: 12px;
+  color: #526176;
+  line-height: 1.7;
+  display: block;
+}
+.panel {
+  background: #fff;
+  border: 1px solid #c7d3e1;
+  border-radius: 11px;
+  box-shadow: 0 4px 16px #14263d0b;
+  overflow: hidden;
+}
+.cabeceraPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 21px;
+}
+.cabeceraPanel h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #14263d;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cabeceraPanel h2 :global(.badge) {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+}
+.cabeceraPanel p {
+  font-size: 12px;
+  color: #526176;
+  margin: 0;
+}
+.cabeceraPanel button i {
+  margin-right: 6px;
+}
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 0 21px 21px;
+}
+.filtros > select {
+  width: 190px;
+  max-width: 100%;
+  font-size: 13px;
+}
+.buscador {
+  flex: 1;
+  min-width: 220px;
+}
+.buscador :global(.input-group-text) {
+  background: #fff;
+  border-right: 0;
+  padding-left: 13px;
+  color: #64748b;
+  font-size: 14px;
+  border-color: #cbd5e1;
+}
+.buscador input {
+  border-left: 0;
+  padding-left: 3px;
+  font-size: 13px;
+}
+.fechaFiltro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.fechaFiltro label {
+  font-size: 12px;
+  color: #526176;
+}
+.fechaFiltro input {
+  width: 150px;
+  font-size: 13px;
+}
+.tablaContenedor {
+  width: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b9c8dc transparent;
+}
+.tabla {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  border-color: #d7e1ec;
+}
+.tabla thead th {
+  background: #edf2f8;
+  color: #526176;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 14px;
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
+}
+.tabla td {
+  padding: 10px 14px;
+  vertical-align: middle;
+  color: #475569;
+}
+.tabla td:first-child,
+.tabla th:first-child {
+  padding-left: 24px;
+}
+.tabla td:last-child,
+.tabla th:last-child {
+  padding-right: 20px;
+  background: #fff;
+}
+.tabla th:last-child {
+  background: #edf2f8;
+}
+.tabla tbody tr:hover td {
+  background: #f8fbff;
+}
+.tabla td strong {
+  font-weight: 600;
+  color: #14263d;
+}
+.tabla :global(.small) {
+  font-size: 12px;
+}
+.equipo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.equipo strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #14263d;
+}
+.equipo small {
+  display: block;
+  font-size: 11px;
+  color: #526176;
+  margin-top: 4px;
+}
+
+.estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.operativa {
+  color: #166534;
+  background: #ecfdf3;
+  box-shadow: inset 0 0 0 1px #bbdfc9;
+}
+.mantenimiento {
+  color: #92400e;
+  background: #fffbeb;
+}
+.fuera {
+  color: #475569;
+  background: #f1f5f9;
+}
+.columnaAcciones {
+  text-align: right;
+  white-space: nowrap;
+}
+.acciones {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.acciones button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 17px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+.acciones .accionVer {
+  color: #1d4ed8;
+  background: #eff6ff;
+}
+.acciones .accionEditar {
+  color: #b45309;
+  background: #fff7ed;
+}
+.acciones .accionEliminar {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+.acciones .accionHistorial {
+  color: #334155;
+  background: #f1f5f9;
+}
+.acciones button:hover {
+  filter: brightness(0.94);
+  border-color: currentColor;
+}
+.pieTabla {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  color: #526176;
+  font-size: 12px;
+  border-top: 1px solid #cbd5e1;
+}
+.pieTabla select {
+  font-size: 12px;
+  min-height: 34px;
+  width: 130px;
+}
+.vacio {
+  text-align: center;
+  padding: 58px 20px;
+  color: #526176;
+}
+.vacio > i {
+  font-size: 34px;
+  color: #647fa7;
+  background: #eff6ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+}
+.vacio h3 {
+  font-size: 17px;
+  color: #14263d;
+  margin: 18px 0 10px;
+}
+.vacio p {
+  font-size: 13px;
+}
+.campos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 19px;
+}
+.anchoCompleto {
+  grid-column: 1/-1;
+}
+.pieFormulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 1px solid #cbd5e1;
+  margin-top: 26px;
+  padding-top: 22px;
+}
+.pieFormulario > span {
+  font-size: 12px;
+  color: #526176;
+}
+.pieFormulario > span i {
+  color: #2563eb;
+  margin-right: 4px;
+}
+.consulta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 19px;
+  margin: 0;
+}
+.consulta dt {
+  font-size: 12px;
+  color: #526176;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.consulta dd {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.historial article {
+  margin: 24px 0;
+  border-left: 2px solid #dbeafe;
+  padding: 0 0 12px 20px;
+}
+.evento {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.eventoIcono {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 6px 9px;
+  border-radius: 8px;
+}
+.evento strong {
+  font-size: 14px;
+  color: #14263d;
+}
+.evento p {
+  font-size: 12px;
+  color: #526176;
+  margin-top: 5px;
+}
+.cambios {
+  font-size: 13px;
+}
+.cambios > div {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.cambios dt {
+  color: #526176;
+  font-weight: 500;
+}
+.cambios dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #14263d;
+}
+.cambios del {
+  color: #64748b;
+}
+.nota {
+  font-size: 12px;
+  color: #526176;
+  margin: 17px 2px 0;
+  line-height: 1.8;
+}
+@media (min-width: 1600px) {
+  .indicador {
+    padding: 21px;
+  }
+  .tabla td {
+    padding-block: 14px;
+  }
+}
+@media (max-width: 1250px) {
+  .indicadores {
+    gap: 12px;
+  }
+  .indicador {
+    padding: 17px;
+  }
+  .valor {
+    font-size: 27px;
+  }
+  .cabeceraPagina {
+    align-items: flex-start;
+  }
+  .sello {
+    margin-top: 6px;
+  }
+  .filtros > select {
+    width: 175px;
+  }
+  .fechaFiltro {
+    flex: 1;
+  }
+  .fechaFiltro input {
+    width: 100%;
+    min-width: 140px;
+  }
+  .filtros .buscador {
+    flex-basis: 260px;
+  }
+}
+@media (max-width: 767px) {
+  .indicadores {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .cabeceraPagina {
+    display: block;
+    margin-bottom: 22px;
+  }
+  .cabeceraPagina h1 {
+    font-size: 28px;
+  }
+  .sello {
+    margin-top: 14px;
+  }
+  .cabeceraPagina p {
+    font-size: 13px;
+  }
+  .indicadorCabecera {
+    font-size: 12px;
+  }
+  .valor {
+    font-size: 27px;
+  }
+  .detalle {
+    font-size: 12px;
+  }
+  .cabeceraPanel {
+    padding: 21px 18px;
+  }
+  .cabeceraPanel h2 {
+    font-size: 16px;
+  }
+  .filtros {
+    padding: 0 18px 20px;
+  }
+  .pieTabla {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+  }
+  .campos {
+    gap: 18px;
+  }
+  .pieFormulario > span {
+    display: none;
+  }
+  .pieFormulario {
+    justify-content: flex-end;
+  }
+  .acciones button {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .cabeceraPanel {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cabeceraPanel > button {
+    width: 100%;
+  }
+  .filtros > select {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .filtros > .buscador {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+  .fechaFiltro {
+    flex-basis: 100%;
+  }
+  .fechaFiltro label {
+    width: 35px;
+  }
+  .fechaFiltro input {
+    min-width: 0;
+  }
+  .filtros .filtroEquipo {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .campos,
+  .consulta {
+    grid-template-columns: 1fr;
+  }
+  .indicador {
+    padding: 16px 13px;
+  }
+  .iconoIndicador {
+    width: 29px;
+    height: 29px;
+    font-size: 15px;
+  }
+  .indicadorCabecera {
+    gap: 4px;
+    min-height: 36px;
+  }
+  .pieTabla {
+    justify-content: center;
+  }
+  .cambios > div {
+    grid-template-columns: 105px minmax(0, 1fr);
+  }
+  .tabla td:last-child,
+  .tabla th:last-child {
+    padding-inline: 8px;
+  }
+  .acciones {
+    gap: 6px;
+  }
+  .acciones button {
+    min-width: 40px;
+    min-height: 44px;
+    padding: 7px;
+  }
+}
+
+.ayudaTabla {
+  font-size: 12px;
+  color: #526176;
+  padding: 0 24px 14px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (min-width: 1600px) {
+  .ayudaTabla {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .ayudaTabla {
+    font-size: 11px;
+    padding-inline: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabla td {
+    padding-block: 17px;
+  }
+}
+
+.verde {
+  color: #166534;
+  background: #ecfdf3;
+}
+.rojo {
+  color: #991b1b;
+  background: #fef2f2;
+}
+.indicador {
+  background: #fff;
+  border-top: 3px solid #93b7f4;
+}
+.indicador.verde {
+  border-top-color: #70b98d;
+}
+.indicador.ambar {
+  border-top-color: #e6b65c;
+}
+.indicador.rojo {
+  border-top-color: #dc8585;
+}
+.indicador.gris {
+  border-top-color: #94a3b8;
+}
+.indicador.verde .valor {
+  color: #166534;
+}
+.indicador.ambar .valor {
+  color: #92400e;
+}
+.indicador.rojo .valor {
+  color: #991b1b;
+}
+.iconoIndicador {
+  border: 1px solid currentColor;
+}
+.tabla thead th {
+  color: #334155;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .indicadores {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .valorTexto {
+    font-size: clamp(18px, 5.8vw, 24px);
+    letter-spacing: -0.4px;
+  }
+}
+
+.filtros > * {
+  min-width: 0;
+  max-width: 100%;
+}
+.fechaFiltro label {
+  flex-shrink: 0;
+  width: auto;
+}
+.tablaContenedor {
+  max-height: 70dvh;
+}
+.tabla thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  .fechaFiltro {
+    flex-wrap: wrap;
+  }
+  .fechaFiltro label {
+    width: 100%;
+    font-size: 13px;
+  }
+  .fechaFiltro > div {
+    flex: 1;
+    min-width: 0;
+  }
+  .acciones button {
+    min-width: 44px;
+  }
+}
+
+.tabla td strong,
+.equipo strong {
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  .indicadores[data-cantidad="3"] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
