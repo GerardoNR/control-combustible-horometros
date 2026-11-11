@@ -1,0 +1,125 @@
+.contenedor {
+  color: #14263d;
+}
+
+.contenedor :global(.nav-tabs) {
+  gap: 6px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.contenedor :global(.nav-tabs .nav-link) {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 8px 8px 0 0;
+  color: #475569;
+  font-weight: 600;
+}
+
+.contenedor :global(.nav-tabs .nav-link.active) {
+  color: #174ea6;
+  border-color: #cbd5e1 #cbd5e1 #fff;
+  background: #fff;
+}
+
+.contenedor :global(.tab-content) {
+  padding: 18px 4px 4px;
+}
+
+.contenedor :global(.campos) {
+  gap: 22px 24px;
+}
+
+.contenedor :global(.form-label) {
+  margin-bottom: 8px;
+  color: #26384f;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.contenedor :global(.form-control),
+.contenedor :global(.form-select) {
+  min-height: 42px;
+  border-color: #9aabc0;
+  color: #14263d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contenedor :global(.form-control:focus),
+.contenedor :global(.form-select:focus) {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem #2563eb24;
+}
+
+.contenedor :global(.form-text) {
+  margin-top: 6px;
+  color: #526176;
+  line-height: 1.45;
+}
+
+.introduccion {
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  border-left: 4px solid #2563eb;
+  border-radius: 0 8px 8px 0;
+  background: #f3f7ff;
+}
+
+.introduccion h3 {
+  margin: 0 0 4px;
+  color: #14263d;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.introduccion p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.bloqueResidente {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 24px;
+  padding: 16px;
+  border: 1px solid #d5deea;
+  border-radius: 10px;
+  background: #f8faff;
+}
+
+.bloqueResidente > p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #526176;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 575px) {
+  .contenedor :global(.tab-content) {
+    padding: 14px 0 0;
+  }
+
+  .contenedor :global(.nav-tabs) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contenedor :global(.nav-tabs .nav-link) {
+    width: 100%;
+    padding-inline: 8px;
+    border-radius: 7px;
+  }
+
+  .contenedor :global(.campos),
+  .bloqueResidente {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .bloqueResidente > p {
+    grid-column: auto;
+  }
+}
