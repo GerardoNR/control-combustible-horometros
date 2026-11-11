@@ -1,0 +1,37 @@
+.listado table {
+  min-width: 1710px;
+}
+.residente {
+  min-width: 170px;
+  max-width: 260px;
+  white-space: normal;
+  line-height: 1.5;
+}
+.residente small {
+  display: block;
+  font-size: 12px;
+  color: #526176;
+  margin-top: 4px;
+}
+
+.listado th,
+.listado td {
+  padding-inline: 14px;
+}
+.listado th:nth-child(3),
+.listado td:nth-child(3) {
+  min-width: 155px;
+}
+.listado th:nth-child(7),
+.listado td:nth-child(7),
+.listado th:nth-child(10),
+.listado td:nth-child(10) {
+  min-width: 170px;
+  max-width: 220px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.listado td:nth-child(5),
+.listado td:nth-child(6) {
+  font-variant-numeric: tabular-nums;
+}
