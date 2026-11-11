@@ -1,0 +1,20 @@
+# Dependencias, compilación y resultados regenerables, en cualquier nivel.
+node_modules/
+dist/
+.vite/
+test-results/
+playwright-report/
+coverage/
+*.tsbuildinfo
+*.log
+*.tmp
+.DS_Store
+# Configuración privada y respaldos locales.
+.env
+.env.*
+!.env.example
+respaldos-locales/
+# Directorios privados de la herramienta y credenciales del entorno.
+.aws/
+.codex/
+.agents/
